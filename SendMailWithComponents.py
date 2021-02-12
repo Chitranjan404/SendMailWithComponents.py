@@ -3,8 +3,8 @@ from email.mime.text import MIMEText #glue
 from email.mime.multipart import MIMEMultipart #blocks
 
 #variables
-senderMail='justin.fuller15537@gmail.com'
-recieverMail='chitranjan15537@gmail.com'
+senderMail='***SENDERS MAIL*****'
+recieverMail='*****RECIEVERS MAIL******'
 body='Hello world!'
 subject='test'
 
@@ -20,7 +20,7 @@ text=msg.as_string()
 #mail server
 server=smtplib.SMTP('smtp.gmail.com',587) 
 server.starttls()
-server.login(senderMail,'storm_thunder')
+server.login(senderMail,'*****SENDERS MAIL PASSWORD*******')
 server.ehlo()
 for i in range(0,10):
  server.sendmail(senderMail,recieverMail,text)
